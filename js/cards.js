@@ -18,12 +18,14 @@ function display(allPlayers){
         playerList.appendChild(li)
 
         if (i >= 4){
-
+            alert('Remember you can pick only 5 player')
             break;
-
+        }
+        else if(i > 4){
+            
         }
     }
-    
+
 }
 
 function selectFive(element){    
