@@ -18,8 +18,9 @@
     </header>
 
     <main class="container mx-auto mb-40">
-        <div class="flex gap-4 mx-auto w-11/12">
+        <div class="flex gap-10 mx-auto w-11/12">
             
+            <!-- Player cards -->
             <div class="grid grid-cols-3 gap-4">
                 <!-- card - 1 -->
                 <div class="card w-64 bg-base-100 shadow-xl">
@@ -97,8 +98,8 @@
 
             <div class="">
                 <!-- Players Names -->
-                <div class="bg-slate-700 h-72 w-60 font-bold">
-                    <p class="text-3xl text-center py-5">Selected - <span id="total-products" class="text-teal-500">V</span>
+                <div class="bg-slate-700 h-72 w-72 font-bold rounded-xl">
+                    <p class="text-3xl text-center py-5 pb-10">Selected - <span id="total-products" class="text-teal-500">V</span>
                     </p>
                     <ul id="selected-players" class="text-center">
                         <li></li>
@@ -106,25 +107,25 @@
                 </div>
 
                 <!-- cost details -->
-                <div class="bg-slate-700 h-auto w-60 my-10 font-bold">
-                    <h1 class="text-3xl text-center font-bold py-5">Budget</h1>
-                    <div class="grid grid-cols-2 my-5">
-                        <P class="mx-auto">Per player:</P><input id="" class="w-full" type="text">
+                <div class="bg-slate-700 h-auto w-72 my-10 font-bold rounded-xl">
+                    <h1 class="text-3xl text-center font-bold py-10">Budget</h1>
+                    <div class="grid grid-cols-2 mb-5">
+                        <P class="mx-auto">Per player :</P><input id="per-player" class="w-24 bg-gray-500 text-white" type="text">
                     </div>
                     <div class="card-actions justify-center">
-                        <button class="btn btn-accent px-16" onclick="">Calculate</button>
+                        <button class="btn btn-accent px-16" onclick="playerTotal()">Calculate</button>
                     </div>
-                    <h3 class="my-5 text-center">Players Expenses: <span id="expence-total">00</span></h3>
+                    <h3 class="my-5 text-center">Players Expenses : $<span id="player-total">00</span></h3>
                     <div class="grid grid-cols-2 my-5">
-                        <P class="mx-auto">Per player:</P><input id="" class="w-full" type="text">
+                        <P class="mx-auto">Manager :</P><input id="manager-money" class="w-24 bg-gray-500 text-white" type="text">
                     </div>
                     <div class="grid grid-cols-2 my-5">
-                        <P class="mx-auto">Per player:</P><input id="" class="w-full" type="text">
+                        <P class="mx-auto">Coach :</P><input id="coach-money" class="w-24 bg-gray-500 text-white" type="text">
                     </div>
                     <div class="card-actions justify-center">
-                        <button class="btn btn-accent px-16" onclick="">Calculate</button>
+                        <button class="btn btn-accent px-12" onclick="totalExpenses()">Calculate Total</button>
                     </div>
-                    <h3 class="my-5 text-center pb-10">Players Expenses: <span id="expence-total">00</span></h3>
+                    <h3 class="my-5 text-center pb-10">Total Expenses : $<span id="expence-total">00</span></h3>
 
 
                 </div>
@@ -133,5 +134,6 @@
     </main>
     
     <script src="js/cards.js"></script>
+    <script src="js/calculate,js"></script>
 </body>
 </html>
