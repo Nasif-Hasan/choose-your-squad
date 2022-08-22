@@ -1,19 +1,18 @@
+// Selected Players name
 const playerArray = []
 
 function display(allPlayers){ 
 
     const playerList = document.getElementById('selected-players');
-
     playerList.innerHTML = '';
 
     for (let i = 0; i < allPlayers.length; i++) {
 
-        const name = playerArray[i].playerName  
-        
+        const name = playerArray[i].playerName         
         const li = document.createElement('li');
 
         li.innerHTML = `
-        <p>${i + 1}   ${name}</p>
+        <p>${i + 1} ${name}</p>
         `
         playerList.appendChild(li)
 
@@ -21,29 +20,27 @@ function display(allPlayers){
             alert('Remember you can pick only 5 player')
             break;
         }
-        else if(i > 4){
-            
-        }
+        
     }
 
 }
 
+
+// Players name card
 function selectFive(element){    
     const playerName = element.parentNode.parentNode.children[0].innerText;
-
     element.disabled = true;
     
     const playerObj = {
         playerName: playerName
     }
-
     playerArray.push(playerObj);
 
     display(playerArray);
-
 }
 
 
+// Calculation of players expenses
 function playerTotal(){
     const playerMoneyField = document.getElementById('per-player');
     const playerMoneyString = playerMoneyField.value;
@@ -62,6 +59,8 @@ function playerTotal(){
 
 }
 
+
+// Calculation of overall expenses 
 function totalExpenses(){
 
     const managerMoneyField = document.getElementById('manager-money');

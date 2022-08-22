@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/football/66114-soccer-photography-football-royalty-free-player-stock-playing.png" type="image/x-icon">
     <title>Choose Your Squad</title>
+
+    <!-- Tailwind and DaisyUi Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
+
 <body>
+
+    <!-- Top Banner Section -->
     <header class="container mx-auto" style="
     background: linear-gradient(#00000086, #000000c4), url(https://images.unsplash.com/photo-1602472097151-72eeec7a3185?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
     background-size:cover;">
@@ -24,6 +31,7 @@
             
             <!-- Player cards -->
             <div class="grid grid-cols-3 gap-4">
+
                 <!-- card - 1 -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure><img src="https://www.sportsmax.tv/media/k2/items/cache/f691a3ee2d7aaf5a0b84640554f00496_XL.jpg" alt="Shoes" /></figure>
@@ -98,8 +106,9 @@
             </div>
                     
 
-            <div class="">
-                <!-- Players Names -->
+            <div>
+
+                <!-- Selected Players Names -->
                 <div class="bg-slate-700 h-72 w-72 font-bold rounded-xl">
                     <p class="text-3xl text-center py-5 pb-10">Selected - <span id="total-products" class="text-teal-500">V</span>
                     </p>
@@ -108,7 +117,7 @@
                     </ul>
                 </div>
 
-                <!-- cost details -->
+                <!-- Calculation Details -->
                 <div class="bg-slate-700 h-auto w-72 my-10 font-bold rounded-xl">
                     <h1 class="text-3xl text-center font-bold py-10">Budget</h1>
                     <div class="grid grid-cols-2 mb-5">
@@ -129,13 +138,12 @@
                     </div>
                     <h3 class="my-5 text-center pb-10">Total Expenses : <span class="text-teal-500">$<span id="expence-total" >00</span></span></h3>
 
-
                 </div>
             </div>
         </div>
     </main>
     
+    <!-- JavaScript file link with script tag -->
     <script src="js/cards.js"></script>
-    <script src="js/calculate,js"></script>
 </body>
 </html>
