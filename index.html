@@ -7,32 +7,107 @@
     <title>Choose Your Squad</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body class="container mx-auto">
-    <header class="border-2 border-sky-500">
-        <div class="my-36">
-            <h1 class="text-5xl font-bold text-center text-teal-500 pb-10">Choose Your Desire Squad</h1>
-            <p class="w-3/6 text-center mx-auto">Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used.</p>
+<body>
+    <header class="container mx-auto">
+        <div class="text-center w-3/6 mx-auto my-32">
+            <h1 class="text-5xl font-bold text-teal-500 pb-10">Choose Your Desire Squad</h1>
+            <p class="">Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used.</p>
         </div>
     </header>
 
-    <main class="">
-        <div>
-            <!-- card - 1 -->
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="https://placeimg.com/400/225/arch" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
+    <main class="container mx-auto ">
+        <div class="grid grid-cols-2 gap-4 ">
+            
+            <div class="grid grid-cols-3 gap-4">
+                <!-- card - 1 -->
+                <div class="card w-64 bg-base-100 shadow-xl">
+                    <figure><img src="https://www.sportsmax.tv/media/k2/items/cache/f691a3ee2d7aaf5a0b84640554f00496_XL.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-teal-500">Lionel Messi</h2>
+                        <p>Lionel Messi is now currently play for Paris Saint-Germain.</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-accent px-16" onclick="selectFive(this)">Select</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <!-- card - 2 -->
+                <div class="card w-64 bg-base-100 shadow-xl">
+                    <figure><img src="https://img.asmedia.epimg.net/resizer/X_3FYwnvwaejxOUEZuhLE2pYGf8=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/AX3G37T4FNMKLLIKTEB6WYK7JI.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-teal-500">Cristiano Ronaldo</h2>
+                        <p>Cristiano Ronaldo is now currently play for Manchester United</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-accent px-16" onclick="selectFive(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card - 3 -->
+                <div class="card w-64 bg-base-100 shadow-xl">
+                    <figure><img src="https://c.files.bbci.co.uk/FE60/production/_118702156_mediaitem118702154.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-teal-500">Naymer Jr</h2>
+                        <p>Naymer Jr is now currently play for Paris Saint-Germain.</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-accent px-16" onclick="selectFive(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card - 4 -->
+                <div class="card w-64 bg-base-100 shadow-xl">
+                    <figure><img src="https://i.eurosport.com/2022/02/14/3316916-67818588-2560-1440.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-teal-500">Sergio Ramos</h2>
+                        <p>Sergio Ramos is now currently play for Paris Saint-Germain.</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-accent px-16" onclick="selectFive(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card - 5 -->
+                <div class="card w-64 bg-base-100 shadow-xl">
+                    <figure><img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1456x464:1458x462)/origin-imgresizer.eurosport.com/2022/04/18/3357718-68634628-2560-1440.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-teal-500">Karim Bengema</h2>
+                        <p>Karim Bengema is now currently play for Real Madrid.</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-accent px-16" onclick="selectFive(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card - 6 -->
+                <div class="card w-64 bg-base-100 shadow-xl">
+                    <figure><img src="https://static.toiimg.com/photo/msid-92917389/92917389.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-teal-500">Robert Lewandowski</h2>
+                        <p>Robert Lewandowski is now currently play for Barcelona.</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-accent px-16" onclick="selectFive(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+
+            <div class="">
+                <!-- Players Names -->
+                <div>
+                    <p class="text-4xl text-center">Selected - <span id="total-products" class="text-teal-500">V</span>
+                    </p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
     
+    <script src="js/cards.js"></script>
 </body>
 </html>
