@@ -17,8 +17,8 @@
         </div>
     </header>
 
-    <main class="container mx-auto ">
-        <div class="grid grid-cols-1 gap-4 ">
+    <main class="container mx-auto">
+        <div class="grid grid-cols-1 gap-4 mx-auto w-11/12">
             
             <div class="grid grid-cols-3 gap-4">
                 <!-- card - 1 -->
@@ -97,12 +97,26 @@
 
             <div class="">
                 <!-- Players Names -->
-                <div>
-                    <p class="text-4xl text-center">Selected - <span id="total-products" class="text-teal-500">V</span>
+                <div class="bg-stone-900 h-72 w-60 font-bold">
+                    <p class="text-3xl text-center py-5">Selected - <span id="total-products" class="text-teal-500">V</span>
                     </p>
-                    <ul id="selected-players">
+                    <ul id="selected-players" class="text-center">
                         <li></li>
                     </ul>
+                </div>
+
+                <!-- cost details -->
+                <div class="bg-sky-200 h-96 w-60 my-10 text-stone-700 font-bold">
+                    <h1 class="text-3xl text-center font-bold py-5">Budget</h1>
+                    <div class="grid grid-cols-2 my-5">
+                        <P class="mx-auto">Per player:</P><input id="" class="w-full" type="text">
+                    </div>
+                    <div class="card-actions justify-center">
+                        <button class="btn btn-accent px-16" onclick="">Calculate</button>
+                    </div>
+                    <h3 class="my-5 text-center">Players Expenses: <span id="expence-total">00</span></h3>
+
+
                 </div>
             </div>
         </div>

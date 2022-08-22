@@ -15,6 +15,10 @@ function display(allPlayers){
         <p>${i + 1}   ${name}</p>
         `
         playerList.appendChild(li)
+
+        if (i >= 4){
+            break
+        }
     }
 }
 
