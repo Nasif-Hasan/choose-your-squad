@@ -3,6 +3,7 @@ const playerArray = []
 function display(allPlayers){ 
 
     const playerList = document.getElementById('selected-players');
+
     playerList.innerHTML = '';
 
     for (let i = 0; i < allPlayers.length; i++) {
@@ -17,14 +18,19 @@ function display(allPlayers){
         playerList.appendChild(li)
 
         if (i >= 4){
-            break
+
+            break;
+
         }
     }
+    
 }
 
 function selectFive(element){    
     const playerName = element.parentNode.parentNode.children[0].innerText;
 
+    element.disabled = true;
+    
     const playerObj = {
         playerName: playerName
     }
@@ -32,6 +38,7 @@ function selectFive(element){
     playerArray.push(playerObj);
 
     display(playerArray);
+
 }
 
 
